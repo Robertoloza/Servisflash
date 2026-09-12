@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Servicios Generales Express</title>
+
+    <link rel="stylesheet" href="styless.css">
+</head>
+
+<body>
+
+    <!-- Barra de navegación -->
+    <nav class="navbar">
+        <div class="logo">🔧 Servicios Express</div>
+
+        <div class="menu">
+            <a href="#servicios">Servicios</a>
+            <a href="#formulario">Solicitar</a>
+            <a href="#contacto">Contacto</a>
+        </div>
+    </nav>
+
+
+    <!-- Encabezado -->
+    <header class="hero">
+
+        <div class="hero-contenido">
+
+            <p class="mini-titulo">SERVICIOS PARA TU HOGAR Y OFICINA</p>
+
+            <h1>Servicios Generales Express</h1>
+
+            <p>
+                Soluciones rápidas, profesionales y confiables
+                para resolver tus necesidades en un solo lugar.
+            </p>
+
+            <a href="#formulario" class="btn-principal">
+                Solicitar un servicio
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- Sección de información -->
+    <section class="info">
+
+        <div class="info-card">
+            <span>⚡</span>
+            <h3>Rápido</h3>
+            <p>Atención para resolver tus necesidades de manera rápida.</p>
+        </div>
+
+        <div class="info-card">
+            <span>🛠️</span>
+            <h3>Práctico</h3>
+            <p>Solicita el servicio desde cualquier dispositivo.</p>
+        </div>
+
+        <div class="info-card">
+            <span>📱</span>
+            <h3>WhatsApp</h3>
+            <p>Tu solicitud se envía directamente por WhatsApp.</p>
+        </div>
+
+    </section>
+
+
+    <!-- Catálogo de servicios -->
+    <section class="seccion" id="servicios">
+
+        <h2>🛠️ Servicios disponibles</h2>
+
+        <p class="texto-seccion">
+            Selecciona el servicio que necesitas y solicita atención.
+        </p>
+
+
+        <div class="servicios-grid">
+
+            <div class="servicio-card">
+                <div class="icono">🌐</div>
+
+                <h3>Soporte Técnico</h3>
+
+                <p>
+                    Instalación, configuración de redes,
+                    internet y soluciones de conectividad.
+                </p>
+
+            </div>
+
+
+            <div class="servicio-card">
+                <div class="icono">⚡</div>
+
+                <h3>Electricidad</h3>
+
+                <p>
+                    Instalaciones, iluminación, cableado
+                    y reparación de fallas eléctricas.
+                </p>
+
+            </div>
+
+
+            <div class="servicio-card">
+                <div class="icono">🔧</div>
+
+                <h3>Plomería</h3>
+
+                <p>
+                    Reparación de fugas, tuberías
+                    y mantenimiento general.
+                </p>
+
+            </div>
+
+
+            <div class="servicio-card">
+                <div class="icono">🧹</div>
+
+                <h3>Limpieza</h3>
+
+                <p>
+                    Limpieza, mantenimiento y
+                    acondicionamiento de espacios.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Cómo funciona -->
+    <section class="como-funciona">
+
+        <h2>📋 ¿Cómo funciona?</h2>
+
+        <div class="pasos">
+
+            <div class="paso">
+                <div class="numero">1</div>
+                <h3>Llena tus datos</h3>
+                <p>Ingresa tu información de contacto y ubicación.</p>
+            </div>
+
+            <div class="paso">
+                <div class="numero">2</div>
+                <h3>Elige un servicio</h3>
+                <p>Selecciona la categoría que necesitas.</p>
+            </div>
+
+            <div class="paso">
+                <div class="numero">3</div>
+                <h3>Explica el problema</h3>
+                <p>Describe brevemente qué necesitas.</p>
+            </div>
+
+            <div class="paso">
+                <div class="numero">4</div>
+                <h3>Envía por WhatsApp</h3>
+                <p>Recibirás atención para continuar con tu solicitud.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Formulario -->
+    <main class="formulario-seccion" id="formulario">
+
+        <div class="formulario">
+
+            <h2>📱 Solicita tu servicio</h2>
+
+            <p class="texto-formulario">
+                Completa los siguientes datos para enviar tu solicitud.
+            </p>
+
+
+            <form id="formServicios">
+
+                <div class="input-group">
+                    <label for="nombre">👤 Nombre completo</label>
+
+                    <input
+                        type="text"
+                        id="nombre"
+                        placeholder="Ej. Luis Roberto Loza"
+                        required>
+                </div>
+
+
+                <div class="input-group">
+                    <label for="telefono">📞 Teléfono</label>
+
+                    <input
+                        type="tel"
+                        id="telefono"
+                        placeholder="Ej. 3312345678"
+                        maxlength="10"
+                        required>
+                </div>
+
+
+                <div class="input-group">
+                    <label for="direccion">📍 Dirección o ubicación</label>
+
+                    <input
+                        type="text"
+                        id="direccion"
+                        placeholder="Calle, número, colonia"
+                        required>
+                </div>
+
+
+                <div class="input-group">
+                    <label for="servicio">🛠️ Tipo de servicio</label>
+
+                    <select id="servicio" required>
+
+                        <option value="">
+                            -- Selecciona una categoría --
+                        </option>
+
+                        <option value="Soporte Técnico / Internet">
+                            Soporte Técnico / Internet
+                        </option>
+
+                        <option value="Electricidad">
+                            Electricidad
+                        </option>
+
+                        <option value="Plomería">
+                            Plomería
+                        </option>
+
+                        <option value="Mantenimiento General">
+                            Mantenimiento General
+                        </option>
+
+                        <option value="Limpieza y Sanitización">
+                            Limpieza y Sanitización
+                        </option>
+
+                        <option value="Otro Servicio">
+                            Otro Servicio
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label for="fecha">
+                        📅 Fecha preferida de atención
+                    </label>
+
+                    <input
+                        type="date"
+                        id="fecha"
+                        required>
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label for="descripcion">
+                        📝 Describe lo que necesitas
+                    </label>
+
+                    <textarea
+                        id="descripcion"
+                        rows="5"
+                        placeholder="Explica brevemente el problema o servicio que necesitas..."
+                        required></textarea>
+
+                </div>
+
+
+                <div class="botones">
+
+                    <button
+                        type="submit"
+                        class="btn-whatsapp">
+                        💬 Solicitar por WhatsApp
+                    </button>
+
+                    <button
+                        type="reset"
+                        class="btn-limpiar">
+                        🗑️ Limpiar
+                    </button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </main>
+
+
+    <!-- Contacto -->
+    <section class="contacto" id="contacto">
+
+        <h2>📞 Contacto</h2>
+
+        <p>
+            ¿Tienes alguna duda? Comunícate directamente con nosotros.
+        </p>
+
+        <a
+            href="https://wa.me/523314413806"
+            target="_blank"
+            class="btn-contacto">
+
+            💬 Contactar por WhatsApp
+
+        </a>
+
+    </section>
+
+
+    <!-- Pie de página -->
+    <footer>
+
+        <h3>🔧 Servicios Generales Express</h3>
+
+        <p>
+            Proyecto Integrador Final • Servicios para hogar y oficina
+        </p>
+
+        <p class="copyright">
+            © 2026 Servicios Generales Express
+        </p>
+
+    </footer>
+
+
+    <!-- Botón flotante de WhatsApp -->
+    <a
+        href="https://wa.me/523314413806"
+        target="_blank"
+        class="whatsapp-flotante"
+        title="Contactar por WhatsApp">
+
+        💬
+
+    </a>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>

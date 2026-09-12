@@ -1,0 +1,548 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef3f8;
+    color: #263238;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   BARRA DE NAVEGACIÓN
+   ========================= */
+
+.navbar {
+    background-color: #12355b;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 7%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+.logo {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    gap: 25px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #4fc3f7;
+}
+
+
+/* =========================
+   ENCABEZADO PRINCIPAL
+   ========================= */
+
+.hero {
+    background: linear-gradient(135deg, #12355b, #1e6fa8);
+    color: white;
+    min-height: 430px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.hero-contenido {
+    max-width: 750px;
+}
+
+.mini-titulo {
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    color: #b9e6ff;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.15rem;
+    margin-bottom: 30px;
+}
+
+.btn-principal {
+    display: inline-block;
+    background-color: white;
+    color: #12355b;
+    padding: 13px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-principal:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+/* =========================
+   TARJETAS DE INFORMACIÓN
+   ========================= */
+
+.info {
+    max-width: 1000px;
+    margin: -45px auto 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 0 20px;
+    position: relative;
+}
+
+.info-card {
+    background-color: white;
+    padding: 25px 20px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.12);
+}
+
+.info-card span {
+    font-size: 2rem;
+}
+
+.info-card h3 {
+    color: #12355b;
+    margin: 8px 0;
+}
+
+.info-card p {
+    color: #667781;
+    font-size: 0.9rem;
+}
+
+
+/* =========================
+   SECCIONES
+   ========================= */
+
+.seccion {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.seccion h2,
+.como-funciona h2,
+.formulario h2,
+.contacto h2 {
+    color: #12355b;
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+
+.texto-seccion {
+    color: #687780;
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   SERVICIOS
+   ========================= */
+
+.servicios-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.servicio-card {
+    background-color: white;
+    border: 1px solid #dce5ec;
+    padding: 25px 18px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.servicio-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    border-color: #3498db;
+}
+
+.icono {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.servicio-card h3 {
+    color: #12355b;
+    margin-bottom: 10px;
+}
+
+.servicio-card p {
+    color: #687780;
+    font-size: 0.9rem;
+}
+
+
+/* =========================
+   COMO FUNCIONA
+   ========================= */
+
+.como-funciona {
+    background-color: white;
+    padding: 50px 7%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.pasos {
+    max-width: 1000px;
+    margin: 35px auto 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.paso {
+    padding: 15px;
+}
+
+.numero {
+    width: 45px;
+    height: 45px;
+    background-color: #1e6fa8;
+    color: white;
+    border-radius: 50%;
+    margin: 0 auto 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.paso h3 {
+    color: #12355b;
+    margin-bottom: 7px;
+}
+
+.paso p {
+    color: #687780;
+    font-size: 0.9rem;
+}
+
+
+/* =========================
+   FORMULARIO
+   ========================= */
+
+.formulario-seccion {
+    padding: 60px 20px;
+}
+
+.formulario {
+    max-width: 800px;
+    margin: auto;
+    background-color: white;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
+}
+
+.formulario h2 {
+    text-align: center;
+}
+
+.texto-formulario {
+    text-align: center;
+    color: #687780;
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    font-weight: bold;
+    margin-bottom: 7px;
+    color: #34495e;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #cbd5df;
+    border-radius: 7px;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    background-color: #fafcfe;
+    transition: 0.2s;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #1e6fa8;
+    box-shadow: 0 0 0 3px rgba(30, 111, 168, 0.15);
+    background-color: white;
+}
+
+
+/* =========================
+   BOTONES
+   ========================= */
+
+.botones {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.btn-whatsapp {
+    background-color: #25d366;
+    color: white;
+    border: none;
+    padding: 14px 25px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-whatsapp:hover {
+    background-color: #1ebe5d;
+    transform: translateY(-2px);
+}
+
+.btn-limpiar {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 14px 22px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-limpiar:hover {
+    background-color: #c0392b;
+}
+
+
+/* =========================
+   CONTACTO
+   ========================= */
+
+.contacto {
+    background-color: #12355b;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.contacto h2 {
+    color: white;
+}
+
+.contacto p {
+    margin-bottom: 20px;
+}
+
+.btn-contacto {
+    display: inline-block;
+    background-color: #25d366;
+    color: white;
+    text-decoration: none;
+    padding: 13px 24px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.btn-contacto:hover {
+    background-color: #1ebe5d;
+}
+
+
+/* =========================
+   PIE DE PAGINA
+   ========================= */
+
+footer {
+    background-color: #0c263f;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+footer h3 {
+    margin-bottom: 5px;
+}
+
+footer p {
+    color: #bdc8d0;
+    font-size: 0.9rem;
+}
+
+.copyright {
+    margin-top: 8px;
+}
+
+
+/* =========================
+   WHATSAPP FLOTANTE
+   ========================= */
+
+.whatsapp-flotante {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    width: 58px;
+    height: 58px;
+    background-color: #25d366;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7rem;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+    z-index: 999;
+    transition: 0.3s;
+}
+
+.whatsapp-flotante:hover {
+    transform: scale(1.1);
+}
+
+
+/* =========================
+   DISEÑO PARA CELULAR
+   ========================= */
+
+@media (max-width: 800px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .menu {
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .info {
+        grid-template-columns: 1fr;
+        margin-top: 30px;
+    }
+
+    .servicios-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .pasos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 550px) {
+
+    body {
+        font-size: 15px;
+    }
+
+    .menu {
+        gap: 10px;
+        font-size: 0.9rem;
+    }
+
+    .hero {
+        min-height: 400px;
+    }
+
+    .hero h1 {
+        font-size: 1.9rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .servicios-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pasos {
+        grid-template-columns: 1fr;
+    }
+
+    .formulario {
+        padding: 25px 18px;
+    }
+
+    .botones {
+        flex-direction: column;
+    }
+
+    .btn-whatsapp,
+    .btn-limpiar {
+        width: 100%;
+    }
+
+    .whatsapp-flotante {
+        right: 18px;
+        bottom: 18px;
+    }
+}
